@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Consolas', Courier, monospace;
+}
+
+:root {
+	--side: 40px
+}
+
+.main {
+	margin: 30px;
+}
+
+.block {
+	border: 1px solid black;
+	width: calc(var(--side)*0.8);
+	height: var(--side);
+	margin: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+
+
+.inputwrapper>* {
+	margin: 2px;
+	padding: 2px 5px;
+	line-height: 2;
+}
+
+input[type='range'] {
+	width: 95%;
+}
+
+h1{
+	width: fit-content;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	border-bottom: 4px solid black;
+}

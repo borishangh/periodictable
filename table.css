@@ -1,0 +1,76 @@
+.tabletop>div {
+    margin-right: 10px;
+}
+
+.tabletop {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.table {
+    margin: 30px 0;
+}
+
+.tablebottom {
+    margin-top: 10px;
+    margin-left: calc(var(--side)*1.6 + 2*6px);
+}
+
+.sblock .block:first-child {
+    margin-right: calc(var(--side)*0.8 + 2*4px);
+}
+
+.sblock,
+.pblock,
+.dblock,
+.fblock {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sblock {
+    width: calc(var(--side)*1.6 + 2*6px);
+}
+
+.pblock .block:first-child {
+    margin-left: calc(var(--side)*4 + 2*16px);
+}
+
+.pblock {
+    width: calc(var(--side)*4.8 + 2*18px);
+}
+
+.dblock>div:nth-child(21),
+.dblock>div:nth-child(30) {
+    margin-left: calc(var(--side));
+
+}
+
+.dblock>div:nth-child(21)::before,
+.fblock>div:first-child::before {
+    content: '*';
+}
+
+.dblock>div:nth-child(30)::before,
+.fblock>div:nth-child(16)::before {
+    content: '‡';
+}
+
+.dblock>div:nth-child(21)::before,
+.dblock>div:nth-child(30)::before,
+.fblock>div:first-child::before,
+.fblock>div:nth-child(16)::before {
+    position: absolute;
+    margin-right: calc(var(--side)*1.6 + 8px);
+    font-size: 16px;
+}
+
+.dblock {
+    width: calc(var(--side)*8 + 2*30px);
+    flex: 0 0 auto;
+}
+
+.fblock {
+    width: calc(var(--side)*12 + 2*46px);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pt</title>
+	<link rel="stylesheet" href="table.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main">
+		<h1>the periodic table explorer</h1>
+		<div class="inputwrapper">
+			<input type="button" value="mass" onclick="colour('atomic_mass')">
+			<input type="button" value="boil" onclick="colour('boil')">
+			<input type="button" value="melt" onclick="colour('melt')">
+			<input type="button" value="density" onclick="colour('density')">
+			<input type="button" value="electron affinity" onclick="colour('electron_affinity')">
+			<input type="button" value="electronegativity" onclick="colour('electronegativity_pauling')">
+			<button class = 'iebtn'>
+				<label for="ie">ionization energy
+					<span class="ievalue">(01)</span>
+				</label>
+				<br>
+				<input type="range" id="ie" name="ie" min="0" max="15" value="0">
+			</button>
+		</div>
+
+		<div class="table">
+			<div class="tabletop">
+				<div class="sblock"></div>
+				<div class="dblock"></div>
+				<div class="pblock"></div>
+			</div>
+			<div class="tablebottom">
+				<div class="fblock"></div>
+			</div>
+		</div>
+
+	</div>
+	<script src="app.js"></script>
+	<script src="table.js"></script>
+</body>
+
+</html>
